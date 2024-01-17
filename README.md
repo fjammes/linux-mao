@@ -11,3 +11,13 @@ PIPEWIRE_LATENCY="512/48000" pw-jack ardour
 
 # Pipewire utility
 qpwgraph
+
+
+# Midi
+
+WARN: start rosegarden, then qsynth
+
+```shell
+pw-jack rosegarden
+qsynth
+```
