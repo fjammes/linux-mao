@@ -21,3 +21,7 @@ WARN: start rosegarden, then qsynth
 pw-jack rosegarden
 qsynth
 ```
+
+# Websites
+
+https://www.fr.wikiloops.com/
