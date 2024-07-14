@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<song>
+ <version>1.2.3</version>
+ <bpm>100</bpm>
+ <volume>0.73</volume>
+ <isMuted>false</isMuted>
+ <metronomeVolume>0.5</metronomeVolume>
+ <name>BriansBeatsFUNK</name>
+ <author>Brian Berry</author>
+ <notes>This is a collection of simple funk beats and fills which can easily be used to create various 4/4 timing songs.
+
+For more info, check out: http://briansbedroom.blogspot.com</notes>
+ <license>undefined license</license>
+ <loopEnabled>true</loopEnabled>
+ <patternModeMode>true</patternModeMode>
+ <playbackTrackFilename></playbackTrackFilename>
+ <playbackTrackEnabled>false</playbackTrackEnabled>
+ <playbackTrackVolume>0</playbackTrackVolume>
+ <action_mode>0</action_mode>
+ <isPatternEditorLocked>false</isPatternEditorLocked>
+ <isTimelineActivated>false</isTimelineActivated>
+ <mode>song</mode>
+ <pan_law_type>RATIO_STRAIGHT_POLYGONAL</pan_law_type>
+ <pan_law_k_norm>1.33333</pan_law_k_norm>
+ <humanize_time>0</humanize_time>
+ <humanize_velocity>0</humanize_velocity>
+ <swing_factor>0</swing_factor>
+ <last_loaded_drumkit></last_loaded_drumkit>
+ <last_loaded_drumkit_name></last_loaded_drumkit_name>
+ <componentList>
+  <drumkitComponent>
+   <id>0</id>
+   <name>Main</name>
+   <volume>1</volume>
+  </drumkitComponent>
+ </componentList>
+ <instrumentList>
+  <instrument>
+   <id>0</id>
+   <name>Instrument 1</name>
+   <drumkitPath></drumkitPath>
+   <drumkit>YamahaVintageKit</drumkit>
+   <volume>1</volume>
+   <isMuted>true</isMuted>
+   <isSoloed>false</isSoloed>
+   <pan_L>1</pan_L>
+   <pan_R>1</pan_R>
+   <pitchOffset>0</pitchOffset>
+   <randomPitchFactor>0</randomPitchFactor>
+   <gain>1</gain>
+   <applyVelocity>true</applyVelocity>
+   <filterActive>true</filterActive>
+   <filterCutoff>1</filterCutoff>
+   <filterResonance>0</filterResonance>
+   <Attack>0</Attack>
+   <Decay>0</Decay>
+   <Sustain>1</Sustain>
+   <Release>999</Release>
+   <muteGroup>-1</muteGroup>
+   <midiOutChannel>-1</midiOutChannel>
+   <midiOutNote>36</midiOutNote>
+   <isStopNote>true</isStopNote>
+   <sampleSelectionAlgo>VELOCITY</sampleSelectionAlgo>
+   <isHihat>-1</isHihat>
+   <lower_cc>0</lower_cc>
+   <higher_cc>127</higher_cc>
+   <FX1Level>0</FX1Level>
+   <FX2Level>0</FX2Level>
+   <FX3Level>0</FX3Level>
+   <FX4Level>0</FX4Level>
+   <instrumentComponent>
+    <component_id>0</component_id>
+    <gain>1</gain>
+   </instrumentComponent>
+  </instrument>
+ </instrumentList>
+ <patternList>
+  <pattern>
+   <name>4/4 funk 1</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 2</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 3</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 4</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 5</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 6</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 7</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk 8</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk ride 1</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 funk ride 2</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>Drag</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>Crash</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill 1</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill 2</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill 3</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill 4</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill 5</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill snare 1</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill snare 2</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill snare 3</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill snare cres</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill Triplets 1</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill Triplets 2</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill Triplets 3</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>4/4 Fill Triplets 4</name>
+   <info></info>
+   <category>unknown</category>
+   <size>96</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+  <pattern>
+   <name>Pattern 10</name>
+   <info></info>
+   <category>unknown</category>
+   <size>192</size>
+   <denominator>4</denominator>
+   <noteList/>
+  </pattern>
+ </patternList>
+ <virtualPatternList/>
+ <patternSequence>
+  <group>
+   <patternID>4/4 funk 1</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 2</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 3</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 4</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 5</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 6</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 7</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk 8</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk ride 1</patternID>
+  </group>
+  <group>
+   <patternID>4/4 funk ride 2</patternID>
+  </group>
+  <group>
+   <patternID>Drag</patternID>
+  </group>
+  <group>
+   <patternID>Crash</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill 1</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill 2</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill 3</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill 4</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill 5</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill snare 1</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill snare 2</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill snare 3</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill snare cres</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill Triplets 1</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill Triplets 2</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill Triplets 3</patternID>
+  </group>
+  <group>
+   <patternID>4/4 Fill Triplets 4</patternID>
+  </group>
+ </patternSequence>
+ <ladspa>
+  <fx>
+   <name>no plugin</name>
+   <filename>-</filename>
+   <enabled>false</enabled>
+   <volume>0</volume>
+  </fx>
+  <fx>
+   <name>no plugin</name>
+   <filename>-</filename>
+   <enabled>false</enabled>
+   <volume>0</volume>
+  </fx>
+  <fx>
+   <name>no plugin</name>
+   <filename>-</filename>
+   <enabled>false</enabled>
+   <volume>0</volume>
+  </fx>
+  <fx>
+   <name>no plugin</name>
+   <filename>-</filename>
+   <enabled>false</enabled>
+   <volume>0</volume>
+  </fx>
+ </ladspa>
+ <BPMTimeLine/>
+ <timeLineTag/>
+ <automationPaths>
+  <path adjust="velocity"/>
+ </automationPaths>
+</song>
