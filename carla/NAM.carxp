@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>false</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <!-- GxGraphicEQ -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>GxGraphicEQ</Name>
+   <URI>http://guitarix.sourceforge.net/plugins/gx_graphiceq_#_graphiceq_</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>G1</Name>
+    <Symbol>G1</Symbol>
+    <Value>-28.8748912811279</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>G2</Name>
+    <Symbol>G2</Symbol>
+    <Value>-17.1518611907959</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>G3</Name>
+    <Symbol>G3</Symbol>
+    <Value>-20.6632652282715</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>G4</Name>
+    <Symbol>G4</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>G5</Name>
+    <Symbol>G5</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>5</Index>
+    <Name>G6</Name>
+    <Symbol>G6</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>6</Index>
+    <Name>G7</Name>
+    <Symbol>G7</Symbol>
+    <Value>0</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>7</Index>
+    <Name>G8</Name>
+    <Symbol>G8</Symbol>
+    <Value>-30</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>8</Index>
+    <Name>G9</Name>
+    <Symbol>G9</Symbol>
+    <Value>-7.94567775726318</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>9</Index>
+    <Name>G10</Name>
+    <Symbol>G10</Symbol>
+    <Value>-14.6683673858643</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>10</Index>
+    <Name>G11</Name>
+    <Symbol>G11</Symbol>
+    <Value>-14.6458587646484</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <!-- Neural Amp Modeler -->
+ <Plugin>
+  <Info>
+   <Type>LV2</Type>
+   <Name>Neural Amp Modeler</Name>
+   <URI>http://github.com/mikeoliphant/neural-amp-modeler-lv2</URI>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.27</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x0</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Input Lvl</Name>
+    <Symbol>input_level</Symbol>
+    <Value>11.2004804611206</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>Output Lvl</Name>
+    <Symbol>output_level</Symbol>
+    <Value>8.1452579498291</Value>
+   </Parameter>
+
+   <CustomData>
+    <Type>http://lv2plug.in/ns/ext/atom#Path</Type>
+    <Key>http://github.com/mikeoliphant/neural-amp-modeler-lv2#model</Key>
+    <Value>Deluxe Reverb II_clean_brighterlouder.nam</Value>
+   </CustomData>
+
+   <CustomData>
+    <Type>http://kxstudio.sf.net/ns/carla/property</Type>
+    <Key>CarlaSkinIsCompacted</Key>
+    <Value>false</Value>
+   </CustomData>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>Scarlett 2i2 3rd Gen Analog Stereo:capture_FL</Source>
+   <Target>Neural Amp Modeler:Input</Target>
+  </Connection>
+  <Connection>
+   <Source>Neural Amp Modeler:Output</Source>
+   <Target>GxGraphicEQ:In</Target>
+  </Connection>
+  <Connection>
+   <Source>GxGraphicEQ:Out</Source>
+   <Target>Scarlett 2i2 3rd Gen Analog Stereo:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>GxGraphicEQ:Out</Source>
+   <Target>Scarlett 2i2 3rd Gen Analog Stereo:playback_FR</Target>
+  </Connection>
+ </ExternalPatchbay>
+</CARLA-PROJECT>
