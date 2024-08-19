@@ -25,3 +25,8 @@ qsynth
 # Websites
 
 https://www.fr.wikiloops.com/
+
+
+# AI
+https://suno.com/create
+https://www.lalal.ai/

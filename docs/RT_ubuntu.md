@@ -3,6 +3,8 @@
 https://discourse.ubuntu.com/t/fine-tuning-the-ubuntu-24-04-kernel-for-low-latency-throughput-and-power-efficiency/44834
 
 
+https://wiki.linuxaudio.org/wiki/system_configuration#do_i_really_need_a_real-time_kernel
+
 ## Config RTkit
 
 Undo?

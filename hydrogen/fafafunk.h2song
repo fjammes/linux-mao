@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <song>
  <version>1.2.0-beta</version>
- <bpm>80</bpm>
+ <bpm>120</bpm>
  <volume>0.666667</volume>
  <metronomeVolume>0.5</metronomeVolume>
  <name>GM kit demo #1</name>
@@ -1706,7 +1706,7 @@
    <Attack>0</Attack>
    <Decay>0</Decay>
    <Sustain>1</Sustain>
-   <Release>1000</Release>
+   <Release>999</Release>
    <muteGroup>-1</muteGroup>
    <midiOutChannel>-1</midiOutChannel>
    <midiOutNote>59</midiOutNote>
@@ -2038,6 +2038,18 @@
      <key>C0</key>
      <length>-1</length>
      <instrument>6</instrument>
+     <note_off>false</note_off>
+     <probability>1</probability>
+    </note>
+    <note>
+     <position>0</position>
+     <leadlag>0</leadlag>
+     <velocity>0.8</velocity>
+     <pan>0</pan>
+     <pitch>0</pitch>
+     <key>C0</key>
+     <length>-1</length>
+     <instrument>10</instrument>
      <note_off>false</note_off>
      <probability>1</probability>
     </note>
