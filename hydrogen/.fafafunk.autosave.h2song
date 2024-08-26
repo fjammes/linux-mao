@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <song>
  <version>1.2.0-beta</version>
- <bpm>80</bpm>
+ <bpm>50</bpm>
  <volume>1.33333</volume>
  <metronomeVolume>0.5</metronomeVolume>
  <name>GM kit demo #1</name>

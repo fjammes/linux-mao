@@ -25,20 +25,26 @@ RUN apt-get update -y && apt-get install -y \
         libsndfile1-dev \
         libfftw3-dev \
         lv2-dev \
-        python3 \
+        python3.10 \
+	python3.10-venv \
         sassc \
     && rm -rf /var/lib/apt/lists/*
 
 
-RUN sudo update-alternatives --install /usr/bin/python python /usr/bin/python3
+RUN python3 -m venv python3 
 
 RUN git clone --depth 1 --branch $GUITARIX_VERSION https://github.com/brummer10/guitarix.git && \
     cd guitarix && \
-    git submodule update --init --recursive && \
-    cd trunk && \
-    ./waf configure --prefix=/usr --includeresampler --includeconvolver --optimization && \
+    git submodule update --init --recursive
+
+RUN apt-get update -y && apt-get install -y build-essential
+RUN apt-get install -y fonts-roboto 
+
+RUN . /python3/bin/activate && \
+    cd guitarix/trunk && \
+    ./waf configure --prefix=/usr --includeresampler --includeconvolver --optimization --no-faust && \
     ./waf build && \
-    sudo ./waf install
+    sudo sh -c ". /python3/bin/activate && ./waf install"
 
 
 
