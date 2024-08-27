@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:noble
 
 ARG DEBIAN_FRONTEND=noninteractive
 
@@ -10,6 +10,7 @@ RUN apt-get update -y && apt-get install -y \
         sudo \
         gperf \
         intltool \
+	build-essential \
         libavahi-gobject-dev \
         libbluetooth-dev \
         libboost-dev \
@@ -25,11 +26,15 @@ RUN apt-get update -y && apt-get install -y \
         libsndfile1-dev \
         libfftw3-dev \
         lv2-dev \
-        python3.10 \
-	python3.10-venv \
+        python3.12 \
+        python3.12-venv \
         sassc \
+        fonts-roboto \
     && rm -rf /var/lib/apt/lists/*
 
+RUN useradd --create-home --uid 1001 --shell /bin/bash guitarix
+USER guitarix
+WORKDIR /home/guitarix
 
 RUN python3 -m venv python3 
 
@@ -37,14 +42,15 @@ RUN git clone --depth 1 --branch $GUITARIX_VERSION https://github.com/brummer10/
     cd guitarix && \
     git submodule update --init --recursive
 
-RUN apt-get update -y && apt-get install -y build-essential
-RUN apt-get install -y fonts-roboto 
-
-RUN . /python3/bin/activate && \
+RUN . /home/guitarix/python3/bin/activate && \
     cd guitarix/trunk && \
     ./waf configure --prefix=/usr --includeresampler --includeconvolver --optimization --no-faust && \
-    ./waf build && \
-    sudo sh -c ". /python3/bin/activate && ./waf install"
+    ./waf build
 
+USER root
+RUN sh -c ". /home/guitarix/python3/bin/activate && cd /home/guitarix/guitarix/trunk && ./waf install"
 
+USER guitarix
+RUN mkdir -p /home/guitarix/.config/guitarix/
 
+# TODO plug pipewire: https://stackoverflow.com/questions/68973199/pipewire-audio-in-fedora-container
