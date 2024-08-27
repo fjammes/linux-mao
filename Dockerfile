@@ -1,3 +1,5 @@
+# Build: docker build . -t guitarix
+# Run: xhost + && docker run -it  -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY guitarix
 FROM ubuntu:noble
 
 ARG DEBIAN_FRONTEND=noninteractive
