@@ -1,5 +1,6 @@
 # Build: docker build . -t guitarix
-# Run: xhost + && docker run -it  -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=$DISPLAY guitarix
+# Run: xhost + && docker run -it  -v /tmp/.X11-unix:/tmp/.X11-unix -v /run/user/1000/pipewire-0:/tmp/pipewire-0 -e PIPEWIRE_RUNTIME_DIR=/tmp -e DISPLAY=$DISPLAY guitarix
+# TODO plug pipewire: https://stackoverflow.com/questions/68973199/pipewire-audio-in-fedora-container
 FROM ubuntu:noble
 
 ARG DEBIAN_FRONTEND=noninteractive
@@ -32,13 +33,14 @@ RUN apt-get update -y && apt-get install -y \
         python3.12-venv \
         sassc \
         fonts-roboto \
+        pipewire-jack \
     && rm -rf /var/lib/apt/lists/*
 
-RUN useradd --create-home --uid 1001 --shell /bin/bash guitarix
-USER guitarix
+RUN useradd --create-home --groups audio,pipewire --uid 1001 --shell /bin/bash guitarix
+USER guitarix 
 WORKDIR /home/guitarix
 
-RUN python3 -m venv python3 
+RUN python3 -m venv python3
 
 RUN git clone --depth 1 --branch $GUITARIX_VERSION https://github.com/brummer10/guitarix.git && \
     cd guitarix && \
@@ -55,4 +57,3 @@ RUN sh -c ". /home/guitarix/python3/bin/activate && cd /home/guitarix/guitarix/t
 USER guitarix
 RUN mkdir -p /home/guitarix/.config/guitarix/
 
-# TODO plug pipewire: https://stackoverflow.com/questions/68973199/pipewire-audio-in-fedora-container
