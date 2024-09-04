@@ -7,6 +7,8 @@ set -euo pipefail
 xhost +
 
 # Need to attach $HOME/.config/guitarix
+# TODO does line below impact tuner error?  
+#     -v /run/user/$(id -u)/at-spi/bus_0:/run/user/$(id -u)/at-spi/bus_0 \
 docker run -it \
     --privileged \
     --ulimit memlock=-1:-1 \
