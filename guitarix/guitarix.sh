@@ -22,4 +22,4 @@ docker run -it \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     -v /run/user/$(id -u)/at-spi/bus_0:/run/user/$(id -u)/at-spi/bus_0 \
     -v /run/user/$(id -u)/pipewire-0:/tmp/pipewire-0 \
-    guitarix
+    -- guitarix pw-jack guitarix
