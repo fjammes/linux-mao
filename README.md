@@ -26,6 +26,10 @@ qsynth
 
 https://www.fr.wikiloops.com/
 
+## Groove Scribe
+
+https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|xxxxxxxxxxxxxxxx|&S=|----O-------O---|&K=|o-------o-------|
+
 
 # AI
 https://suno.com/create
