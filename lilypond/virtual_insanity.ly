@@ -93,11 +93,27 @@ bassTab = \relative c, {
   gis fis gis gis
   r gis8 cis16
 
-  % Mesure 9
+  % Mesure 13
   cis'8 e16 dis16
   r16 e16 r16 dis16~
   dis16 \deadNote dis16 \deadNote dis16 cis16
   dis8. e,,16
+
+  % Mesure 14
+  gis16 gis
+  \afterGrace gis8\glissando {
+  \stemDown \hideNotes
+  g16 }
+  \unHideNotes
+  r8 \deadNote gis16 gis16~
+  gis16 fis16 gis16 gis16~
+  gis16 fis16 gis16 gis16
+
+  % Mesure 15
+  a16\4 a\4 fis8
+  e8 \deadNote e16 e16
+  r16 e8 a16\4~
+  a e eis fis~
 }
 
 \score {
