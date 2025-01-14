@@ -36,7 +36,7 @@ bassTab = \relative c, {
   gis16 fis16 gis8
   \deadNote ais8\4 \deadNote ais16\4 ais16~\4
   ais16\4 gis16 ais16\4 ais16\4
-  r16 \deadNote dis16 \deadNote dis16 dis16
+  r16 \deadNote ais16 \deadNote ais16 dis16\3
 
   % Mesure 5
   dis'8 fis16 eis16
@@ -77,7 +77,7 @@ bassTab = \relative c, {
   \stemDown \hideNotes
   g16 }
   \unHideNotes
-  r8 \deadNote gis16 gis16~
+  r8 \deadNote g16 gis16~
   gis16 fis16 gis16 gis16~
   gis16 fis16 gis16 gis16
 
@@ -105,15 +105,50 @@ bassTab = \relative c, {
   \stemDown \hideNotes
   g16 }
   \unHideNotes
-  r8 \deadNote gis16 gis16~
-  gis16 fis16 gis16 gis16~
-  gis16 fis16 gis16 gis16
+  r8 \deadNote g16 gis~
+  gis fis gis gis~
+  gis16 fis16 gis8
 
   % Mesure 15
-  a16\4 a\4 fis8
-  e8 \deadNote e16 e16
-  r16 e8 a16\4~
-  a e eis fis~
+  a\4 a16\4 fis16
+  e8 \deadNote e16 e
+  r \deadNote e \deadNote e a\4~
+  a fis e8
+
+  % Mesure 17
+  fis16 fis fis8
+  \deadNote g \deadNote g16 gis~
+  gis fis gis gis
+  r \deadNote a \deadNote a dis~\3
+
+  % Mesure 18
+  dis8 fis'16 eis
+  r fis8 \staccato eis16~
+  eis8 \deadNote eis16 dis
+  eis8. \trill f,,16
+
+  % Mesure 19
+  ais16\4 ais\4
+  \afterGrace ais8\4\glissando {
+  \stemDown \hideNotes
+  g16 }
+  \unHideNotes
+  r8
+  \deadNote ais16\4 ais\4~
+  ais\4 gis16 ais16\4 ais16\4
+  r ais8.\4
+
+  % Mesure 20
+  b8 b16 gis
+  fis8 \deadNote fis16 fis
+  r \deadNote fis \deadNote fis b16~
+  b16 gis16 fis16 gis16~
+
+  % Mesure 21
+  gis16 fis16 gis8
+  \deadNote ais8\4 \deadNote ais16\4 ais16~\4
+  ais16\4 gis16 ais16\4 ais16\4
+  r16 \deadNote ais16\4 \deadNote ais16\4 dis16\3
 }
 
 \score {
