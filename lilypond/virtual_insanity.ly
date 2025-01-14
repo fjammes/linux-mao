@@ -88,7 +88,16 @@ bassTab = \relative c, {
   a e eis fis~
 
   % Mesure 12
-  fis e
+  fis e fis8
+  \deadNote fis8 \deadNote fis16 gis~
+  gis fis gis gis
+  r gis8 cis16
+
+  % Mesure 9
+  cis'8 e16 dis16
+  r16 e16 r16 dis16~
+  dis16 \deadNote dis16 \deadNote dis16 cis16
+  dis8. e,,16
 }
 
 \score {
