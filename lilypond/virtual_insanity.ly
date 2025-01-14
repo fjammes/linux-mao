@@ -73,11 +73,11 @@ bassTab = \relative c, {
 
   % Mesure 10
   gis16 gis
-  \afterGrace gis8\4\glissando {
+  \afterGrace gis8\glissando {
   \stemDown \hideNotes
   g16 }
   \unHideNotes
-  r8 \deadNote ais16\4 gis16~
+  r8 \deadNote gis16 gis16~
   gis16 fis16 gis16 gis16~
   gis16 fis16 gis16 gis16
 
