@@ -1,5 +1,10 @@
 \version "2.24.3"
 
+\header {
+  title = "Virtual Insanity"
+  composer = "Jamiroquai"
+}
+
 bassTab = \relative c, {
   \clef "bass_8"
   \key fis \major
@@ -149,6 +154,42 @@ bassTab = \relative c, {
   \deadNote ais8\4 \deadNote ais16\4 ais16~\4
   ais16\4 gis16 ais16\4 ais16\4
   r16 \deadNote ais16\4 \deadNote ais16\4 dis16\3
+
+  % Mesure 22 (3:46 m)
+  dis'8 fis16 eis16
+  r16 fis8 \staccato
+  eis32(\glissando fis32)
+  (\glissando eis16) dis16 cis16 ais16\2
+  gis16\2 f16\3 cis'8\1 \trill
+
+  % Mesure 23
+  ais8\2 gis16\2 ais\2~
+  \afterGrace ais\2 \glissando {
+  \stemDown \hideNotes
+  g16 }
+  \unHideNotes
+  r16
+  \deadNote ais,\4 ais\4~
+  ais\4 ais8\4 \staccato ais16\4
+  r gis ais\4 ais\4
+
+  % Mesure 24
+  b8 b16 gis16
+  fis8 \staccato \deadNote fis16 fis16
+  r16 \deadNote fis16 \deadNote fis16 b16~
+  b16 gis16 fis8
+
+  % Mesure 25
+  \tuplet 3/2 { gis \staccato gis \staccato gis \staccato }
+  \tuplet 3/2 { gis \staccato gis \staccato gis \staccato }
+  \tuplet 3/2 { ais\4 \staccato ais\4 \staccato ais\4 \staccato }
+  \tuplet 3/2 { ais\4 \staccato ais\4 \staccato ais\4 }
+
+  % Mesure 26
+  \afterGrace dis4\4 \glissando {
+  \stemDown \hideNotes
+  c16 }
+  r r r
 }
 
 \score {
