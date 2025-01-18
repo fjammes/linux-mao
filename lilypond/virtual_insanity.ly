@@ -40,6 +40,28 @@ bassTab = \relative c, {
   a16 }
   \unHideNotes
 
+  \mark \markup { "Verse" }
+  % Mesure 1
+  b16 b'16 r8 r4
+  % Mesure 2
+  \deadNote b,16 ais'16 eis16 d16\3 r4
+  % Mesure 3
+  dis16\3 dis'16\1 r8 fis,,16 fis'16  g,16 g'16\2
+  % Mesure 4
+  gis,16 gis'16\2 r8 r16 ais,8.
+
+  % Mesure 1
+  b16 b'16 r8 r4
+  % Mesure 2
+  r16 ais16 eis16 d16\3 r4
+  % Mesure 3
+  dis16\3 dis'16\1 r8 fis,,16 fis'16  g,16 g'16\2
+  % Mesure 4
+  gis,16 gis'16\2 r8 r8 \afterGrace gis8\4 \glissando {
+  \stemDown \hideNotes
+  a16 }
+  \unHideNotes
+
   %
   % Pont
   %
