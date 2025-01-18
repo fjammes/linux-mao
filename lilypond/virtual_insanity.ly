@@ -14,6 +14,11 @@ bassTab = \relative c, {
   \tempo 4 = 92
   \mark \markup { "Ternary mode : swing on sixteenth" }
 
+%  Intro
+
+  % Mesure 1
+  r1 r r r
+
   %
   % Refrain
   %
@@ -31,20 +36,7 @@ bassTab = \relative c, {
   % Mesure 1
   b16 b'16 r8 r4
   % Mesure 2
-  r16 ais16 eis16 d16\3 r4
-  % Mesure 3
-  dis16\3 dis'16\1 r8 fis,,16 fis'16  g,16 g'16\2
-  % Mesure 4
-  gis,16 gis'16\2 r8 r8 \afterGrace gis8\4 \glissando {
-  \stemDown \hideNotes
-  a16 }
-  \unHideNotes
-
-  \mark \markup { "Verse" }
-  % Mesure 1
-  b16 b'16 r8 r4
-  % Mesure 2
-  \deadNote b,16 ais'16 eis16 d16\3 r4
+  \deadNote b,16 ais'16 eis16 d16\3 r16   \deadNote ais'16 \deadNote d,16\3 ais16\4
   % Mesure 3
   dis16\3 dis'16\1 r8 fis,,16 fis'16  g,16 g'16\2
   % Mesure 4
@@ -62,6 +54,22 @@ bassTab = \relative c, {
   a16 }
   \unHideNotes
 
+
+
+  \mark \markup { "Verse" }
+  % Mesure 1
+  dis,16\3 dis'16\1 r8
+  % Mesure 2
+  e,,16 e'16\2 eis,16 eis'16\2
+  % Mesure 3
+  fis,16 fis'16\2 r8 r8. \deadNote a,16
+  % Mesure 4
+  c16\3 c'16 r8 r8. \deadNote ais,16
+  % Mesure 5
+  b16\3 b'16 r8 r8. \deadNote ais,16
+  % Mesure 6
+  ais16 ais'16 r16 \deadNote ais,16 b b' r \deadNote ais,
+
   %
   % Pont
   %
@@ -70,7 +78,7 @@ bassTab = \relative c, {
   \time 4/4
 
   % Mesure 1
-  dis8 fis16 eis16
+  dis'8 fis16 eis16
   r16
   fis8 \staccato
   eis16~ eis16
