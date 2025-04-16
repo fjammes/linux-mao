@@ -34,3 +34,6 @@ https://www.mikeslessons.com/groove/?TimeSig=4/4&Div=16&Tempo=80&Measures=1&H=|x
 # AI
 https://suno.com/create
 https://www.lalal.ai/
+
+# Fretboard.js
+https://moonwave99.github.io/fretboard.js/index.html
