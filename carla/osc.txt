@@ -1,0 +1,1 @@
+oscsend osc.tcp://clrinfopo18.home:22752 /Carla_Patchbay_4/0/set_active i 0
